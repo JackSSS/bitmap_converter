@@ -1,8 +1,9 @@
-var expect = require('mocha').expect;
+var expect = require('chai').expect;
 var converter = require(__dirname + '/../lib/converter');
+var bitmap = require(__dirname + '/../lib/converter');
 
-describe('the converter', function() {
+describe('the mood map', function() {
   it('should visually show you your mood', function() {
-    expect(createPalette(new_palette)).to.not.eql(bitmap); //still working on something viable for this
+    expect(converter()).to.eql.not(bitmap); //still working on something viable for this
   });
 });
